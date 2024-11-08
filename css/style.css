@@ -1,0 +1,279 @@
+/* log in */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'EB Garamond', serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #035A00;
+}
+
+a{
+    text-decoration: none;
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.margen-interno{
+    padding: 0 50px;
+}
+
+.header{    
+    background: #000000;
+    background:-webkit-linear-gradient(to right, hsla(86, 9%, 15%, 0.37), hsla(94, 9%, 16%, 0.37));  
+    background: linear-gradient(to right,  hsla(86, 9%, 15%, 0.37), hsla(94, 9%, 16%, 0.37)), url(./img/estudiantes.png.jpg);
+    /* background: url(imagenes/estudiantes.png.jpg);  */
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+        background: #3b7f39;
+        display: flex;
+        flex-flow: row nowrap;
+        height: 60px;
+        align-items: center;
+        border-bottom: 1px solid #eaec71;
+    }
+    .logo {
+        flex: 1 1 auto;
+    }
+        .logo img {
+            display: block;
+            height: 50px;
+            margin: 30px;
+        }
+    .nombre{
+        flex: 0 auto;
+    }
+        .nombre a{
+            color: #fff;
+            font-size: 30px;
+        }
+        .nombre a:hover{
+            color: #ccc;
+        }
+        .social{
+            flex: 1 1 auto;
+            display: flex;
+        }
+            .social-icon{
+                margin-left: 700px;
+                font-size: 10px;
+                padding: 0 5px;
+            }
+            .social-icon a{
+                color: #eaec71;
+            }
+            .social a:hover{
+                color: #8f9146;
+            }
+    .texto{
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+        h1{
+            font-family:'Times New Roman';
+            font-size: 21px;
+            color: #fff;
+            font-weight: 300;
+            text-align: center;
+            line-height: 1.6;
+        }    
+    .secciones{
+            display: flex;
+            flex-flow: row nowrap;
+            flex: 1 1 auto;                
+            align-items: center;
+            justify-content: center;
+            width: 100%;                
+            color: black;
+            overflow: hidden;
+            position: relative;
+            animation: slideIn 2s ease-in-out;
+        }
+        .recuadro{
+            background: #ffffff;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            margin: 40px 0;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            height: 80%;
+            box-shadow: 2px 2px 20px black;
+        }
+        .log{
+            background: rgb(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 25px;
+            flex-direction: column;
+            width: 50%;
+            margin-bottom: 80px;
+            margin-top: 80px;
+            overflow: hidden;
+            border: 5px solid #eaec71;
+            box-shadow: 2px 2px 20px black;
+        }
+        .log form{
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .log h1{
+            font-size: 40px;
+            color: black;
+            text-align: center;
+        }
+        .log label{
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            margin-top: 10px;
+            font-family: "Roboto", sans-serif;
+        }
+        .log input{
+            width: 300px;
+            height: 30px;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #bfbfbf;
+            box-shadow: 2px 2px 10px black;
+            outline: none;
+        }
+        ::placeholder{
+            color: rgba(255, 255, 255, 0.3);
+        }
+        .log button{
+            width: 300px;
+            height: 30px;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2a9309;
+            color: white;
+            cursor: pointer;
+            box-shadow: 2px 2px 10px black;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(80px, 0px); opacity: 0; }
+            to { transform: translate(0, 0px); opacity: 1; }
+        }
+
+/* mensajes */
+span.error{
+    color: red;
+    font-weight: bold;
+}
+span.success{
+    color: green;
+    font-weight: bold;
+}
+    
+@media screen and (max-width: 1280px) {
+    .margen-interno{
+        padding: 0 40px;
+    }
+    .nombre a {
+        font-size: 30px;
+    }
+    .nombre{
+        flex: none;
+    }
+    .secciones{
+        flex-direction: column;
+    }
+    .recuadro{
+        width: 75%;
+        height: 65%;
+    }
+    .log{
+        width: 50%;
+    }
+    .log input{
+        width: 250px;
+    }
+    .log button{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .margen-interno{
+        padding: 0 20px;
+    }
+    .nombre a {
+        font-size: 25px;
+    }
+    .log{
+        width: 80%;
+    }
+    .log input{
+        width: 250px;
+    }
+    .log button{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .margen-interno{
+        padding: 0 10px;
+    }
+    .nombre a {
+        font-size: 20px;
+    }
+    .log{
+        width: 90%;
+    }
+    .log input{
+        width: 200px;
+    }
+    .log button{
+        width: 200px;
+    }
+}
+
+@media screen and (max-height: 860px) {
+    .log{
+        position: absolute;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .log{
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .log{
+        transform: scale(0.8);
+    }
+}

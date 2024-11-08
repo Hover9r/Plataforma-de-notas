@@ -1,0 +1,405 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'EB Garamond', serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #2a9309;
+}
+
+.aa{
+    text-decoration: none;
+    color: #2a9309;
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.margen-interno{
+    padding: 0 50px;
+}
+
+.header{    
+    background: #000000;
+    background:-webkit-linear-gradient(to right, hsla(86, 9%, 15%, 0.37), hsla(94, 9%, 16%, 0.37));  
+    background: linear-gradient(to right,  hsla(86, 9%, 15%, 0.37), hsla(94, 9%, 16%, 0.37)), url(imagenes/estudiantes.png.jpg);
+    /* background: url(imagenes/estudiantes.png.jpg);  */
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+        background: hsla(118, 100%, 18%, 0.637);
+        display: flex;
+        flex-flow: row nowrap;
+        height: 70px;
+        align-items: center;
+        border-bottom: 1px solid #eaec71;
+    }
+    /* .logo {
+        
+    } */
+        .logo img {
+            display: block;
+            height: 50px;
+            margin: 30px;
+        }
+    .nombre{
+        flex: 0 auto;
+        font-family: 'EB Garamond', serif;
+        font-family: 'Open Sans', sans-serif;
+    }
+        .nombre a{
+            color: #fff;
+            font-size: 30px;
+        }
+        .nombre a:hover{
+            color: #ccc;
+        }
+        .social{
+            margin: 0 0 0 auto;
+            display: flex;
+        }
+            .social-icon{
+                font-size: 10px;
+                padding: 0 5px;
+            }
+            .social-icon a{
+                color: #eaec71;
+            }
+            .social a:hover{
+                color: #8f9146;
+            }
+    .texto{
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+        h1{
+            font-family:'Times New Roman';
+            font-size: 21px;
+            color: #fff;
+            font-weight: 300;
+            text-align: center;
+            line-height: 1.6;
+        }    
+
+.section{
+    background: #035A00;
+    display: flex;
+}
+    .titulo{
+        color: #d41313;
+        padding: 0 0 0 10px;
+        margin: 10px 0 0 0;
+        width: 100%;
+        text-align: left;
+        font-family: 'Rubik', sans-serif;
+    }
+    .partes{
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+        width: 250%;
+    }
+        .secciones{
+            flex: 1 1 40%;
+            color: #070707;
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin: 10px 10px 0 0px;
+            flex: 1 1 30%;
+            background: white;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            overflow: hidden;
+            border: 5px solid #eaec71;
+        }
+        .imagen{
+            width: 50%;
+            margin: 0 0 0 24%;
+            margin-top: 30px;
+            transition: 0,5s;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        .imagen:hover{
+            transform: scale(1.2);
+        }
+
+        .secciones:hover .rol{
+            margin-top: 20px;
+        }
+        p{
+            margin: 10px;
+            text-align: center;
+        }
+        h3{
+            font-size: 13px;
+            padding: 10px 10px;
+            margin-top: -80px;
+        }
+        h4{
+            margin: 0 0 10px 0;
+            text-align: center;
+        }
+        .rol{
+            font-size: 25px;
+            text-transform: uppercase;
+            padding: 0px 0 10px 0;
+            color: #2a9309;
+            margin: 0px 10px;
+            text-align: center;
+            transition: margin-top 0.3s ease;
+        }
+        h2{
+            font-size: 32px;
+            text-transform: uppercase;
+            padding: 0px 0 10px 0;
+            color: #d41313;
+            margin-top: 0;
+            margin-bottom: .5rem;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+    .panel{
+        padding: 0 50px;
+    }
+
+    .boton{
+        letter-spacing: 1px;
+        margin: 10px 6% 10px 5%;
+        background: white;
+        overflow: hidden;
+        border: 5px solid #eaec71;
+        box-shadow: 2px 2px 10px black;
+        animation: slideIn 1s ease-in-out;
+    }
+    
+    .sinboton{
+        letter-spacing: 1px;
+        margin: 10px 6% 10px 5%;
+        background: white;
+        overflow: hidden;
+        border: 5px solid #fff;
+    }
+    
+    .icono{
+        padding: 10px 10px;
+        display: block;
+        margin: auto;
+    }
+
+    .col2{
+        flex: 1 0 0%;
+    }
+    
+    .separador{
+        padding: 0px 0 10px 0;
+        color: #2a9309;
+        margin: 0px 20px;
+        text-align: center;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .desplegable{
+        background: #fff;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 0 0 6px rgb(0, 0, 0, .5);
+    }
+
+    @keyframes slideIn {
+        from { transform: translateX(80px, 0px); opacity: 0; }
+        to { transform: translate(0, 0px); opacity: 1; }
+    }
+
+/* Tabla */
+.table{
+    width: 100%;
+    border-top:1px solid #000000;
+    border-left:1px solid #000000;
+    border-spacing:0;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    color: #000000;
+    font-weight: bold;
+}
+.table th{
+    background: #808080;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    text-align: center;
+    color: #000000;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    padding: 10px;
+}
+.table td{
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    padding: 10px;
+}
+
+table .vacio{
+    padding: none;
+    background: none;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+    color: #fff;
+    align-items: baseline;
+}
+
+input[type=submit] {
+    cursor: pointer;
+	appearance: none;
+	border: .2em solid #3b7f39!important;
+	background: hsl(0 0 0/0);
+	padding: 12px 24px;
+	color: #3b7f39;
+	border-radius: 2em;
+	transition: 1s;
+	&:hover, &:focus, &:active {
+		background: #3b7f39;
+		color: #fff;
+    }   
+}
+
+.txtnota{
+    width: 50px;
+}
+
+.error{
+    color: red;
+}
+
+.success{
+    color: #2a9309;
+}
+
+@media screen and (max-width: 1280px) {
+    .margen-interno{
+        padding: 0 40px;
+    }
+    .nombre a {
+        font-size: 30px;
+    }
+    .aa{
+        font-size: 30px;
+    }
+    .nombre{
+        flex: none;
+    }
+    .social-icon{
+        flex: 1 1 auto;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .separador{
+        font-size: 10px;
+
+    }
+}
+
+@media screen and (max-width: 980px){
+    .table th{
+        font-size: 10px;
+        padding: 10px 0 10px 0px;
+    }
+    .table td{
+        font-size: 10px;
+        padding: 10px 0 10px 0px;
+    }
+    input[type=submit]{
+        padding: 8px 10px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    h2{
+        font-size: 24px;
+    }
+    .col2 {
+        flex: 1 0 35%;
+    }
+    .panel {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .table th{
+        font-size: 8px;
+    }
+    .table td{
+        font-size: 8px;
+    }
+    input[type=submit]{
+        padding: 8px 8px;
+    }
+}
+
+@media screen and (max-width: 628px) {
+    h2{
+        font-size: 20px;
+    }
+    .margen-interno{
+        padding: 0 20px;
+    }
+    .nombre a {
+        font-size: 25px;
+    }
+    .aa{
+        font-size: 25px;
+    }
+    .panel {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    .margen-interno{
+        padding: 0 10px;
+    }
+    .nombre a {
+        font-size: 20px;
+    }
+    .aa{
+        font-size: 20px;
+    }
+    .col2{
+        flex: 1 0 50%;
+    }
+    .panel {
+        padding: 0 10px;
+    }
+    input[type=submit]{
+        padding: 5px 5px;
+    }
+}
