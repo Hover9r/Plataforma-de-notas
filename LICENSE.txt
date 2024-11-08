@@ -1,0 +1,12 @@
+Licencia Creative Commons Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)
+
+Copyright (c) [2024] [Xing Ying Lin, Juan Pablo Mejia Rodriguez, Hover Estiven Suarez Puentes
+]
+
+Se concede a cualquier persona el derecho de copiar, modificar, distribuir y realizar el trabajo, pero >solo para fines no comerciales<, bajo las siguientes condiciones:
+
+1. Atribución: Debes dar el crédito adecuado, proporcionar un enlace a la licencia e indicar si se han realizado cambios. Puedes hacerlo de cualquier manera razonable, pero >sin sugerir que tienes el respaldo del autor o que usas el trabajo para fines comerciales<.
+
+2. Uso no comercial: No puedes usar el material para fines comerciales sin obtener el permiso adecuado. El uso comercial incluye la distribución del código como parte de un producto comercial o cualquier uso que implique una compensación económica, ya sea directa o indirecta.
+
+3. Sin garantías: Este trabajo se proporciona "tal cual", sin ninguna garantía de ningún tipo, expresa o implícita, incluyendo pero no limitado a las garantías de comerciabilidad o idoneidad para un propósito particular. En ningún caso el autor o los titulares del copyright serán responsables de cualquier reclamación, daño o otra responsabilidad que surja del uso del código.

@@ -10,6 +10,7 @@
     die();
     }
 
+
     // try {
     //     // Configuración de la conexión y la codificación a UTF-8
     //     $conn = new PDO('mysql:host=localhost;dbname=prueba;charset=utf8', 'root', 'Hola:123', [
